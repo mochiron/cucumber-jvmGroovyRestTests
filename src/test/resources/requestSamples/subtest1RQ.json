@@ -1,0 +1,30 @@
+{
+  "request": {
+    "requestId" : "98765",
+    "customerId" : "665544",
+    "passengers": {
+      "kind": "qpxexpress#passengerCounts",
+      "travelers" : [
+               {
+                    "passengerType" : "F",
+                    "count" : 1
+               }
+      ]
+    },
+    "slice": [
+      {
+        "kind": "qpxexpress#sliceInput",
+        "origin": "MIA",
+        "destination": "WAS",
+        "date": "2016-11-25T01:00:00",
+        "maxStops": 0,
+        "maxConnectionDuration": 0,
+        "preferredCabin": "COACH"
+      }
+    ],
+    "maxPrice": "2000.0",
+    "saleCountry": "US",
+    "refundable": false,
+    "solutions": "100"
+  }
+}
