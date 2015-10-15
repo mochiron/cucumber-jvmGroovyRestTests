@@ -22,7 +22,7 @@ Scenario: User login (retrieve Token) with header atributes
 @Positive @Post @test1/subtest1
 Scenario: Post with a request body (from an external file)
 	Given I post to the resource url "/api/test1/subtest1"
-			And I provide a body request file from "requestSamples/searchOneway.json"
+			And I provide a body request file from "requestSamples/subtest1RQ.json"
 	When I retrieve the results
 	Then the status code should be 200
 	And it should have the field "kind" containing the value "qpxExpress#tripsSearch"
